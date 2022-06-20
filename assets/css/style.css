@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto 50px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+h1 {
+  text-align: center;
+}
+
+.inputCriarTarefa,
+.btnCriarTarefa {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 15px;
+}
+
+.inputCriarTarefa {
+  width: 80%;
+  background-color: rgba(24, 130, 154, 0.84);
+  color: #fff;
+}
+
+.inputCriarTarefa::placeholder {
+  color: #fff;
+}
+
+.inputCriarTarefa:focus {
+  outline: 2px solid rgb(0, 208, 255);
+}
+
+.inputCriarTarefa:focus~.btnCriarTarefa {
+  outline: 2px solid rgb(0, 208, 255);
+}
+
+.btnCriarTarefa {
+  width: 20%;
+  margin-left: -10px;
+  background-color: var(--primary-color-darker);
+  color: #fff;
+}
+
+.listadeTarefas li {
+  list-style: none;
+  margin: 0 0 0 -40px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.descricaoTarefa-clicado {
+  text-decoration: line-through !important;
+  color: rgba(0, 208, 255, 0.479);
+}
+.listadeTarefas li {
+  color: var(--primary-color);
+  font-weight: 600;
+  height: 12%;
+  min-height: 47px;
+  border-bottom: 2px solid rgba(0, 208, 255, 0.317);
+}
+hr {
+  border: 2px solid var(--primary-color);
+  border-radius: 100px;
+}
+.descricaoTarefa  {
+  flex-grow: 10;
+  margin: 0 0 0 10px;
+  
+  
+}
+.tarefaApagar {
+  width: 60px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgb(255, 0, 0);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarefaApagar:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+}
+.listadeTarefas .tarefacheckbox {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 208, 255);
+  border-radius: 20px;
+}
+
+.btn-select {
+  background-color: rgba(0, 208, 255, 0.452) !important;
+}
